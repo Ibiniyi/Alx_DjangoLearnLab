@@ -1,16 +1,8 @@
+# Delete a Book
 
----
+# Retrieve the book
+book = Book.objects.get(id=1)
 
-# ✅ **delete.md**
-
-```md
-# Delete Operation
-
-### Command used in Django shell:
-
-```python
-from bookshelf.models import Book
-
-b = Book.objects.get(title="Nineteen Eighty-Four")
-b.delete()
+# Delete the book instance
+book.delete()
 
