@@ -1,5 +1,7 @@
 # Delete a Book
 
+from bookshelf.models import Book
+
 # Retrieve the book
 book = Book.objects.get(id=1)
 
